@@ -13,7 +13,11 @@
 	
 	if (isset($_POST['nameen'])){
 		$name_en = $_POST['nameen'];
+	}else{
+		die("English name is needed.");
 	}
+	
+	
 	if (isset($_POST['namech'])){
 		$name_ch = $_POST['namech'];
 	}
@@ -44,7 +48,7 @@
 	$bind_result->close();
 	$mysqli->close();
 	
-	echo "添加成功.\n";
+	echo "Add done.\n";
 	
 	
 	
